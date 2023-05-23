@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doceria | Cadastro</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+</head>
+
+<body id="cadastro">
+    <div id="sing-up">
+        <h1>Cadastro</h1>
+        <button id="back" onclick="GoBack()"><img
+                src="https://icones.pro/wp-content/uploads/2021/06/icone-fleche-gauche-rose.png" alt="Voltar">
+        </button>
+        <div id="sing-up-box">
+            <div> Nome</div>
+            <input id="name" class="input" type="text" placeholder="Nome">
+            <div>Sobrenome</div>
+            <input id="second_name" class="input" type="text" placeholder="Sobrenome">
+            <div>E-mail</div>
+            <input id="email_singIn" class="input" type="email" placeholder="E-mail">
+            <div>Senha</div>
+            <input id="password_singIn" class="input" type="password" placeholder="Senha">
+            <div>Confirmar Senha</div>
+            <input id="password_confirmed" class="input" type="password" placeholder="Confirmar Senha">
+            <button id="cadastrar" class="button" oncLick="register()">Cadastrar</button>
+        </div>
+    </div>
+
+</body>
+
+</html>

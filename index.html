@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doceria | Login</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+</head>
+
+<body id="index">
+    <div id="sing-in">
+        <h2>Bem-Vindo(a)</h2>
+        <div>E-mail</div>
+        <input id="email_index" class="input" type="email" maxlength="255" placeholder="user@hotmail.com">
+        <div>Senha</div>
+        <input id="password_index" class="input" type="password" minlength="12" placeholder="oooooo"><br><br>
+        <div id="buttons">
+            <button onclick="Login()" class="button" type="submit">Entrar</button>
+            <span></span>
+            <button onclick="GoToRegister()" class="button">Cadastrar</button>
+        </div>
+    </div>
+</body>
+
+</html>
