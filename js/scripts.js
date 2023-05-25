@@ -6,7 +6,7 @@ function Login() {
     let dados = JSON.parse(window.localStorage.getItem('tds'))
 
     for (let i = 0; i < dados.length; i++) {
-        if (login == dados[i].email || login == dados[i].nome + dados[i].sobrenome && password == dados[i].senha) {
+        if (login == dados[i].email && password == dados[i].senha || login == dados[i].nome + dados[i].sobrenome && password == dados[i].senha) {
             window.location.href = "./login.html"
             break
         } else {
