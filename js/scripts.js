@@ -41,17 +41,19 @@ function register() {
     if (document.getElementById('password_singIn').value == document.getElementById('password_confirmed').value) {
         add.senha = document.getElementById("password_singIn").value
         dados.push(add)
+        let n = JSON.stringify(dados)
+
+        localStorage.setItem('tds', n)
+
+        alert("CONTA CRIADA COM SUCESSO")
+        window.location.href = "./index.html"
+
     } else {
         alert('SENHAS NÃO COINCIDEM')
     }
 
 
-    let n = JSON.stringify(dados)
 
-    localStorage.setItem('tds', n)
-
-    alert("CONTA CRIADA COM SUCESSO")
-    window.location.href = "./index.html"
 
 }
 
